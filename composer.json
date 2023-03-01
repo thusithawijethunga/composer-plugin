@@ -1,7 +1,32 @@
 {
+    "name": "thusitha/composer-plugin",
+    "description": "composer plugin",
+    "keywords": [
+        "composer",
+        "plugin"
+    ],
+    "license": "MIT",
+    "type": "library",
     "require": {
         "monolog/monolog": "^2.0",
-        "twig/twig": "^3.0",
-        "doctrine/dbal": "3.6.0"
-    }
+        "guzzlehttp/guzzle": "^7.1"
+    },
+    "autoload": {
+        "files": [
+            "src/helper.php"
+        ],
+        "psr-4": {
+            "Thusitha\\ComposerPlugin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thusitha Avinda",
+            "email": "thusithawijethunga@gmail.com",
+            "homepage": "https://my-book.mydomain.com",
+            "role": "Owner"
+        }
+    ],
+    "homepage": "https://my-book.mydomain.com",
+    "prefer-stable": true
 }
